@@ -1,13 +1,23 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-image: url(http://wallpaperstock.net/black-texture%2C-back%2C-ground%2C--cars%2C-trucks_wallpapers_57533_1920x1200.jpg);
+  background-position:initial;
+  background-size: cover;
+  color: #1E1E1F;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  margin: 0 54px;
+  position: relative;
+  min-height: 100vh;
+}
+
+.App-title {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-top: 35px;
+  margin-bottom: 0;
+  font-weight: bold;
 }

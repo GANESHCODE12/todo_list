@@ -1,0 +1,55 @@
+.LoadingTodo-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2px 8px;
+    box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
+    border-radius: 8px;
+}
+
+.LoadingTodo-text {
+    margin: 24px 0 24px 24px;
+    width: calc(100% - 120px);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: rgba(250, 250, 250, 1);
+}
+
+.LoadingTodo-completeIcon,
+.LoadingTodo-deleteIcon {
+    border-radius: 50px;
+    height: 38px;
+    width: 38px;
+}
+
+.LoadingTodo-completeIcon {
+    position: absolute;
+    left: 12px;
+}
+
+.LoadingTodo-deleteIcon {
+    position: absolute;
+    right: 12px;
+}
+
+.LoadingTodo-container,
+.LoadingTodo-completeIcon,
+.LoadingTodo-deleteIcon {
+    background: linear-gradient(90deg,rgba(250, 250, 250, 1),rgb(17, 115, 172));
+    background-size: 400% 400%;
+    animation: loadingAnimation 3s ease-in-out infinite;
+}
+
+@keyframes loadingAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

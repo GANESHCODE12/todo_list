@@ -1,0 +1,60 @@
+.TodoItem {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid gray;
+    margin: 0 2px 8px;
+    background-color: rgb(17, 115, 172);
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+
+.TodoItem:hover {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: 1px solid gray;
+    margin: 0 2px 8px;
+    background-color: rgb(21, 145, 218);
+}
+
+.TodoItem-p {
+    margin: 24px 0 24px 24px;
+    width: calc(100% - 120px);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.TodoItem-p--complete {
+    text-decoration: line-through;
+}
+
+.icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    font-size: 24px;
+    font-weight: bold;
+    size: 24px;
+    margin-left: 16px;
+}
+
+.icon:hover {
+    color: #4caf50;
+}
+
+.icon-check--active {
+    color: #4caf50;
+}
+
+.icon-delete {
+    margin-right: 16px;
+}
+
+.icon-delete:hover {
+    color: rgb(184, 19, 19);
+}
