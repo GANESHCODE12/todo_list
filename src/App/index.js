@@ -12,6 +12,7 @@ import { TodoForm } from "../TodoForm";
 import { CreateTodoButton } from "../CreateTodoButton";
 import { Modal } from "../Modal";
 import { AlertWithStorageListener } from "../Alert";
+import { TodoEmptySearchResults } from "../TodoEmptySearchResults";
 
 function App() {
   const {
@@ -46,9 +47,7 @@ function App() {
         onError={() => <TodosError />}
         onLoading={() => <TodosLoading />}
         onEmpty={() => <EmptyTodos />}
-        onEmptySearchResults={(searchText) => (
-          <p>No hay resultado para {searchText} </p>
-        )}
+        onEmptySearchResults={() => <TodoEmptySearchResults searchText={searchValue} />}
         render={() =>
           searchedTodos.map((todo) => (
             <TodoItem

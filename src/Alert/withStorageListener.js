@@ -16,8 +16,8 @@ export default function withStorageListener(WrappedComponent) {
         }, []);
 
         const toggle = () => {
-            setStorageChange(false);
             props.synchronizedStorage();
+            setStorageChange(false);
         };
 
         return <WrappedComponent show={storageChange} toggle={toggle} />;
