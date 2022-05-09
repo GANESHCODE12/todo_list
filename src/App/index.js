@@ -15,21 +15,26 @@ import { AlertWithStorageListener } from "../Alert";
 import { TodoEmptySearchResults } from "../TodoEmptySearchResults";
 
 function App() {
+  const { state, stateUpdaters } = useTodos();
+
   const {
     error,
     loading,
     searchedTodos,
-    completeTodo,
-    deleteTodo,
-    openModal,
-    setOpenModal,
     totalTodos,
+    completeTodo,
     completedTodos,
+    openModal,
     searchValue,
-    setSearchValue,
+  } = state;
+
+  const {
+    setOpenModal,
     addTodo,
+    deleteTodo,
+    setSearchValue,
     synchronizedStorage,
-  } = useTodos();
+  } = stateUpdaters;
 
   return (
     <React.Fragment>
